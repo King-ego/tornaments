@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/Theme';
 import GlobalStyle from './styles/GlobalStyle';
 import { Provider as ReduxProvider } from 'react-redux';
-import store from './store';
+import { Store } from './store';
+import RoutersApp from './router';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReduxProvider store={store}>
+    <ReduxProvider store={Store}>
       <ThemeProvider theme={theme}>
-        <App />
+        <RoutersApp />
         <GlobalStyle />
       </ThemeProvider>
     </ReduxProvider>

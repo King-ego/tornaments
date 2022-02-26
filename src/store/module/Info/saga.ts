@@ -1,5 +1,6 @@
 import { Creators as AuthCreator, Types } from './actions';
-import { all, call, fork, put, select, takeLatest } from 'redux-saga/effects';
+// import { all, call, fork, put, select, takeLatest } from 'redux-saga/effects';
+import { all, put, takeLatest } from 'redux-saga/effects';
 
 export function* requestStorage() {
   localStorage.setItem('token', 'abc');

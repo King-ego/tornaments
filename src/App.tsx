@@ -1,7 +1,8 @@
 import React from 'react';
+import Dashboard from './view/Dashboard';
 
-function App() {
-  return <div>Hello World</div>;
-}
+const App: React.FC = () => {
+  return <Dashboard />;
+};
 
 export default App;

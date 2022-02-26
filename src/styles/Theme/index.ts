@@ -6,6 +6,7 @@ const colors = {
   purple: '#7537ef',
   white: '#ffffff',
   black: '#000000',
+  red: '#ff1818',
 
   grey10: '#f3f4f8',
   grey20: '#e1e5eb',
