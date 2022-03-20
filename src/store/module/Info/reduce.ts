@@ -2,12 +2,12 @@ import * as Immutable from 'seamless-immutable';
 import { Types } from './actions';
 import { createReducer } from 'reduxsauce';
 
-export interface AppReducerState {
+export interface AppReducerInfoState {
   activeTab?: string | undefined;
   loading?: boolean;
 }
 
-type ImmutableAppReducerState = Immutable.Immutable<AppReducerState>;
+type ImmutableAppReducerState = Immutable.Immutable<AppReducerInfoState>;
 
 export const INITIAL_STATE: ImmutableAppReducerState = Immutable.from({
   activeTab: undefined,

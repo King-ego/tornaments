@@ -1,8 +1,13 @@
 import React from 'react';
 import { Content } from './style';
 
-const Container: React.FC = ({ children }) => {
-  return <Content>{children}</Content>;
+export interface PropsContainer {
+  // use in the components <Container/> and <BackgroundColor/>
+  background?: string;
+}
+
+const Container: React.FC<PropsContainer> = ({ children, background }) => {
+  return <Content background={background}>{children}</Content>;
 };
 
 export default Container;

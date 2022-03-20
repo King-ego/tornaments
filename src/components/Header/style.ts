@@ -5,5 +5,4 @@ export const HeaderContent = styled.header`
   height: 80px;
   display: flex;
   align-items: center;
-  background: ${(props) => props.theme.colors.blue};
 `;

@@ -26,4 +26,8 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  a {
+    text-decoration: none;
+  }
+
 `;

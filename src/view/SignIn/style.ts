@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { Field } from 'formik';
-// interface InputProps {
-//   mb?: string;
-// }
+// i
+interface InputContainerProps {
+  color?: string;
+}
 
 export const Container = styled.div`
   width: 100%;
@@ -25,25 +26,41 @@ export const Input = styled(Field)`
   width: 100%;
   border: none;
   height: 38px;
-  padding: 0 12px;
+  padding: 0 36px 0 12px;
   background: transparent;
   border-radius: 6px;
 `;
 
-export const InputContainer = styled.div`
+export const InputContainer = styled.div<InputContainerProps>`
   margin-bottom: 32px;
-  border: 1px solid ${(props) => props.theme.colors.blue};
+  display: flex;
+  border: 1px solid ${(props) => props.color};
   background: ${(props) => props.theme.colors.white};
   /* box-shadow: 1px 1px 0px 0px ${(props) => props.theme.colors.blue40}; */
   border-radius: 6px;
   position: relative;
 `;
 
-export const SpanError = styled.span`
+export const Avatar = styled.div`
   position: absolute;
-  bottom: -20px;
-  left: 0;
-  color: ${(props) => props.theme.colors.red};
+  bottom: 0;
+  right: 12px;
+
+  .avatar-color-error {
+    fill: ${(props) => props.theme.colors.red};
+  }
+`;
+
+export const Span = styled.span`
+  display: block;
+  background: ${(props) => props.theme.colors.red};
+  color: ${(props) => props.theme.colors.white};
+  position: absolute;
+  width: 100px;
+  bottom: 30px;
+  right: 0;
+  padding: 5px;
+  border-radius: 6px;
 `;
 
 export const Button = styled.button`
