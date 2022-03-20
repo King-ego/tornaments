@@ -1,12 +1,15 @@
 import React from 'react';
 import Container from '../../components/Container';
 import Header from '../../components/Header';
+import SideBar from '../../components/Content/SideBar';
 
 const Dashboard: React.FC = () => {
   return (
     <>
       <Header />
-      <Container>Dashboard</Container>
+      <Container position="relative">
+        <SideBar />
+      </Container>
     </>
   );
 };

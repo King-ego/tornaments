@@ -1,15 +1,14 @@
 import React from 'react';
 import Container from '../Container';
-import { HeaderContent } from './style';
-import { Link } from 'react-router-dom';
+import { HeaderContent, RedirectLink } from './style';
 import BackgroundColor from '../BackgroundColor';
 
 const Header: React.FC = () => {
   return (
     <BackgroundColor background="#2179ee">
-      <Container>
+      <Container background="#000">
         <HeaderContent>
-          <Link to={'/'}>Menu de titulo</Link>
+          <RedirectLink to={'/'}>Menu de titulo</RedirectLink>
         </HeaderContent>
       </Container>
     </BackgroundColor>

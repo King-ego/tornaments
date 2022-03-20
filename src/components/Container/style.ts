@@ -7,5 +7,6 @@ export const Content = styled.div<PropsContainer>`
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 5%;
+  position: ${({ position }) => position && position};
   background: ${({ background }) => (background ? background : 'transparent')};
 `;
