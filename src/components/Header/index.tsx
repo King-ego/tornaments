@@ -5,8 +5,8 @@ import BackgroundColor from '../BackgroundColor';
 
 const Header: React.FC = () => {
   return (
-    <BackgroundColor background="#2179ee">
-      <Container background="#000">
+    <BackgroundColor background="#000">
+      <Container background="#2179ee">
         <HeaderContent>
           <RedirectLink to={'/'}>Menu de titulo</RedirectLink>
         </HeaderContent>

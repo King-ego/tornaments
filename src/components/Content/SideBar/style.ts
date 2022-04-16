@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: ${({ theme }) => theme.colors.blue};
 `;
 
 export const Aside = styled.div`
@@ -17,6 +17,11 @@ export const Aside = styled.div`
   text-align: center;
   padding: 10px;
   color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background: ${({ theme }) => theme.secondaryColors.blue10};
+  }
 `;
 
 export const AsideContent = styled.div`
